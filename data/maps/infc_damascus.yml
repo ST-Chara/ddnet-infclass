@@ -1,0 +1,15 @@
+-- shrinking from 10000 to 800 (with shrink speed = 1) takes 184 seconds
+-- why: 10000 - 800 = 9200; 9200 / TickSpeed = 184; where TickSpeed = 50
+default_radius = 6500
+min_radius = 800
+circle_shrink_speed = 1
+default_inf_radius = 250
+timelimit = 3
+
+inf_circle_positions:
+	150, 94, default_inf_radius
+	128, 106, default_inf_radius
+	124, 90, default_inf_radius
+
+circle_positions:
+	208, 72, default_radius, min_radius, circle_shrink_speed,
